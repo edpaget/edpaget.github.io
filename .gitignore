@@ -11,4 +11,7 @@ pom.xml.asc
 .lein-plugins/
 .lein-failures
 .nrepl-port
+/public/
+/themes/lotus/css/blog.css
+/themes/lotus/css/blog.css.map
 .cpcache/
