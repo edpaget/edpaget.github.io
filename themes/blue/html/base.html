@@ -9,11 +9,7 @@
     {% endblock %}
     <link rel="canonical" href="{{site-url}}{{uri}}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//fonts.googleapis.com/css?family=Alegreya:400italic,700italic,400,700" rel="stylesheet"
-          type="text/css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.7.0/styles/default.min.css">
     {% style "css/screen.css" %}
 </head>
 <body>
@@ -59,10 +55,10 @@
             </div>
         </div>
     </div>
-    <footer>Copyright &copy; {{today|date:yyyy}} {{author}}
-        <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
+    <footer>Licensed as <a href="https://github.com/edpaget/edpaget.github.io/blob/main/LICENSE">CC0</a>
+        <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p>
+    </footer>
 </div>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 {% if post.klipse %} {{post.klipse|safe}} {% endif %}
 {% if page.klipse %} {{page.klipse|safe}} {% endif %}
 </body>
