@@ -17,5 +17,5 @@ I am interested in how we encode our relationships to each other in computer cod
 
 ## Contact
 
-* [ed.paget@gmail.com][mailto:ed.paget@gmail.com]
-* [bsky][https://bsky.app/profile/immortalscience.org]
+* [ed.paget@gmail.com](mailto:ed.paget@gmail.com)
+* [bsky](https://bsky.app/profile/immortalscience.org)
