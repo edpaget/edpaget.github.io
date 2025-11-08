@@ -1,0 +1,43 @@
+{{ define "main" }}
+<div id="home">
+    <h2>Project Documentation</h2>
+    <p>This site hosts documentation for various open source projects.</p>
+
+    <h3>Projects</h3>
+
+    <!-- Y-CRDT JNI Projects -->
+    {{ $ycrdtProjects := where .Site.RegularPages "Params.category" "y-crdt-jni" }}
+    {{ if $ycrdtProjects }}
+    <h4>Y-CRDT JNI Projects</h4>
+    <p>Java Native Interface bindings for Y-CRDT, enabling conflict-free replicated data types in Java applications.</p>
+    <ul>
+    {{ range $ycrdtProjects }}
+        <li><strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong> - {{ .Params.description }}</li>
+    {{ end }}
+    </ul>
+    {{ end }}
+
+    <!-- Clojure Utilities -->
+    {{ $clojureProjects := where .Site.RegularPages "Params.category" "clojure" }}
+    {{ if $clojureProjects }}
+    <h4>Clojure Utilities</h4>
+    <p>A collection of Clojure libraries and utilities.</p>
+    <ul>
+    {{ range $clojureProjects }}
+        <li><strong><a href="{{ .RelPermalink }}">{{ .Title }}</a></strong> - {{ .Params.description }}</li>
+    {{ end }}
+    </ul>
+    {{ end }}
+
+    <hr>
+
+    <h3>About</h3>
+    <p>I am Ed Paget, a software developer interested in how we encode our relationships to each other in computer code.</p>
+
+    <h4>Contact</h4>
+    <ul>
+        <li><a href="mailto:ed.paget@gmail.com">ed.paget@gmail.com</a></li>
+        <li><a href="https://bsky.app/profile/immortalscience.org">bsky</a></li>
+    </ul>
+</div>
+{{ end }}
