@@ -1,3 +1,4 @@
+# Clojure/Cryogen (legacy)
 pom.xml
 pom.xml.asc
 *.jar
@@ -17,3 +18,15 @@ pom.xml.asc
 .cpcache/
 /.clj-kondo/
 /.lsp/
+
+# Hugo
+hugo-site/public/
+hugo-site/resources/
+hugo-site/.hugo_build.lock
+.hugo_build.lock
+
+# General
+.DS_Store
+*.swp
+*.swo
+*~

@@ -1,0 +1,12 @@
+baseURL = 'https://carcdr.net/'
+languageCode = 'en-us'
+title = '(car . cdr)'
+
+[params]
+  description = 'Project Documentation'
+  author = 'Ed Paget'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
